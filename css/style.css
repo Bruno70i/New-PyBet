@@ -1,14 +1,8 @@
+
+
 /* Configuração Global */
 * {
     font-family: Arial, sans-serif;
-}
-
-
-/* Estilos para o cabeçalho */
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 1em 0;
 }
 
 
@@ -20,23 +14,155 @@ body {
 }
 
 
-.nav {
+/* Estilos para o cabeçalho */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+}
+
+
+
+/* --------------------- configuração dos menu (inicio) --------------------- */
+.menu {
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2em;
+    padding: 20px;
 }
 
 
-
-
-/* Estilos para a seção hero */
-.titulo1 {
-    text-align: left;
-    padding: 3em 1em;
-    background-color: #f4f4f4;
-    height: 100%;
+ul { 
+    display: flex; 
+    list-style: none; /* remove os pontos de lista */ 
+    margin: 0; 
+    padding: 0;
 }
+
+
+ul li { 
+    margin-right: 2em; /* adiciona espaço entre os itens do menu */
+}
+
+
+ul li a {
+    color: #fff;
+    text-decoration: none;
+    background-color: blue;
+}
+
+
+.logo {
+    background-color: aqua;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+/* --------------------- configuração dos menu (fim) --------------------- */
+
+
+
+
+
+
+/* --------------------- seção 1 do site (inicio) --------------------- */
+
+
+.container1 {
+    background-color: #f50909;
+    padding: 10px;
+    display: flex; /* deixa o conteudo um do lado do outro */
+    gap: 100px; /* tamanho do espaço que separa os item dentro do container */
+   
+}
+
+/* texto do conteudo */
+#item1 {
+    background-color: chartreuse;
+    display: block;
+   
+}
+
+/* foto do conteudo */
+#item2 {
+    background-color: rgb(30, 48, 13);
+    flex-grow: 1; /* permite que todo o espaço restante seja preenchido pelo item2 */
+}
+
+
+/* botao inscrever-se */
+button {
+    width: 10em;
+    height: 10em;
+}
+
+
+/* --------------------- seção 1 do site (fim)--------------------- */
+
+
+
+
+
+
+/* --------------------- seção 2 do site (inicio)--------------------- */
+
+
+.container2-parte1 {
+    background-color: #970404;
+    padding: 10px;
+    gap: 50px;
+    display: flex;
+}
+
+.container2-parte1 > #item1 {
+    background-color: rgb(71, 136, 7);
+}
+
+
+/* usei um parentesco mencionando o #item2 que está dentro de container 2 */
+.container2-parte1 > #item2 {
+    background-color: coral;
+    flex-grow: inherit; /* permite que todo o espaço restante seja preenchido pelo item2 */
+}
+
+
+.container2-parte2 > #item2 {
+    background-color: aquamarine;
+    text-align: center;
+    
+}
+
+.container2-parte3 > #item3 {
+    padding: 10px;
+    background-color: darkorchid;
+    text-align: center;
+}
+
+.container2-parte4 > #item4 {
+    background-color: rgb(53, 43, 58);
+    text-align: center;
+    display: flex;
+}
+
+.container2-parte4 p {
+    background-color: #f50909;
+    margin-left: auto;
+    margin-right: a;
+}
+
+
+/* --------------------- seção 2 do site (fim)--------------------- */
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -44,10 +170,10 @@ body {
 @media (max-width: 768px) {
     .menu-links {
         flex-direction: column;
-        align-items: center;
+        align-items: self-start; /* texto vai para a esquerda */
     }
 
-    .titulo1 {
+    .container1 {
         padding: 2em 1em;
     }
 }

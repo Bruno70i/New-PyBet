@@ -69,23 +69,36 @@ ul li a {
 
 
 .container1 {
-    background-color: #f50909;
+    background-image: linear-gradient(to top, black, #7A2680);
     padding: 10px;
     display: flex; /* deixa o conteudo um do lado do outro */
-    gap: 100px; /* tamanho do espaço que separa os item dentro do container */
+    gap: 10px; /* tamanho do espaço que separa os item dentro do container */
    
 }
 
 /* texto do conteudo */
 #item1 {
-    background-color: chartreuse;
+    margin: 0px;
+    margin-right: 0%;
+    background-color: #f50909;
     display: block;
-   
+}
+
+#item1 > h1 {
+    margin: 0px;
+    font-size: 40px;
+    color: #fff;
+}
+
+#item1 > p {
+    font-size: 20px;
+    color: #5448D1;
+    background-color: cadetblue;
 }
 
 /* foto do conteudo */
 #item2 {
-    background-color: rgb(30, 48, 13);
+    background-image: linear-gradient(to top, black, #7A2680);
     flex-grow: 1; /* permite que todo o espaço restante seja preenchido pelo item2 */
 }
 

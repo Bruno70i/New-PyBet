@@ -16,9 +16,10 @@ body {
 
 /* Estilos para o cabeçalho */
 header {
-    background-color: #333;
+    background-image: linear-gradient(to top, #18051a, black);
     color: #fff;
-    padding: 1em 0;
+    margin: 0px;
+    padding: 10px;
 }
 
 
@@ -28,34 +29,38 @@ header {
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
 }
 
 
 ul { 
     display: flex; 
     list-style: none; /* remove os pontos de lista */ 
-    margin: 0; 
+    margin: 0 0 0 80px; 
     padding: 0;
 }
 
 
 ul li { 
-    margin-right: 2em; /* adiciona espaço entre os itens do menu */
+    margin-right: 40px; /* adiciona espaço entre os itens do menu */
 }
 
 
 ul li a {
+    font-size: 1.8rem;
     color: #fff;
     text-decoration: none;
-    background-color: blue;
 }
 
+/* muda a cor dos links */
+a:hover {
+    color: #1D1E8F;
+    text-decoration: underline; /* coloca sublinhado quando aproxima o mouse */
+}
 
-.logo {
-    background-color: aqua;
-    padding-right: 50px;
-    padding-left: 50px;
+.logo-oficial {
+    margin: 0 0 0 70px;  /* espaço para esquerda */
+    width: 100px; /* tamanho da imagem largura */
+    height: 100px; /* tamanho da imagem altura */
 }
 
 /* --------------------- configuração dos menu (fim) --------------------- */
@@ -69,44 +74,66 @@ ul li a {
 
 
 .container1 {
-    background-image: linear-gradient(to top, black, #7A2680);
+    background-image: url("background2.png");
+    background-size: cover;
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    
+
     padding: 10px;
     display: flex; /* deixa o conteudo um do lado do outro */
     gap: 10px; /* tamanho do espaço que separa os item dentro do container */
-   
 }
 
 /* texto do conteudo */
 #item1 {
-    margin: 0px;
+    margin: 0 auto;
+    padding: 20px; /* Ajusta o espaçamento interno */
+    padding-left: 150px; /* Ajusta o espaçamento na esquerda */
     margin-right: 0%;
-    background-color: #f50909;
     display: block;
+    width: 80%; /* Define a largura da div */
+    max-width: 1300px; /* Limita o tamanho máximo */
+    box-sizing: border-box; /* Inclui padding na largura */
+    
 }
 
 #item1 > h1 {
-    margin: 0px;
-    font-size: 40px;
+    margin: 0 0 0 0; /* Espaçamento margens zerada */
+    padding-top: 160px; /* Ajusta o espaçamento interno em cima */
+    font-size: 4.5rem; /* Ajusta o tamanho do texto */
+    line-height: 1.2; /* Define o espaçamento entre linhas */
+    font-weight: bold;
     color: #fff;
+    word-break: break-word; /* Permite quebra de palavras */
 }
 
 #item1 > p {
-    font-size: 20px;
+    margin: 0 0 0 0; /* Espaçamento margens zerada */
+    margin-bottom: 20px; /* Espaço abaixo do parágrafo */
+    font-size: 2.8rem; /* tamanho da fonte */
+    line-height: 1.2; /* espaçamento da linha */
     color: #5448D1;
-    background-color: cadetblue;
+    font-weight: bold;
+    max-width: 900px; /* Limita o tamanho máximo */
 }
 
 /* foto do conteudo */
 #item2 {
-    background-image: linear-gradient(to top, black, #7A2680);
+    width: auto;
+    height: auto;
     flex-grow: 1; /* permite que todo o espaço restante seja preenchido pelo item2 */
 }
 
 
 /* botao inscrever-se */
 button {
-    width: 10em;
-    height: 10em;
+    margin-top: 150px;
+    color: #5448D1;
+    font-weight: bold;
+    padding: 30px 30px; /* Ajusta o botão */
+    border-radius: 30px; /* borda do botão */
+    font-size: 3rem;
 }
 
 
@@ -140,8 +167,9 @@ button {
 
 
 .container2-parte2 > #item2 {
-    background-color: aquamarine;
+    background-color: rgb(59, 122, 101);
     text-align: center;
+    color: #f50909;
     
 }
 
@@ -152,7 +180,7 @@ button {
 }
 
 .container2-parte4 > #item4 {
-    background-color: rgb(53, 43, 58);
+    background-color: rgb(51, 35, 59);
     text-align: center;
     display: flex;
 }

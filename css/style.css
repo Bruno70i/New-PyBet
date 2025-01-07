@@ -83,12 +83,12 @@ a:hover {
     padding: 0.5%; /* lembrar de remover */
     display: flex; /* deixa o conteudo um do lado do outro */
     gap: 1%; /* tamanho do espaço que separa os item dentro do container */
+    justify-content: flex-start; /* alinha o conteudo (item1 e item2) para a esquerda */
 }
 
 /* texto do conteudo */
 #item1 {
     background-color: #f50909;
-    margin: 0 auto;
     padding: 1%; /* Ajusta o espaçamento interno */
     padding-left: 6%; /* Ajusta o espaçamento na esquerda */
     margin-right: 0%;
@@ -123,13 +123,13 @@ a:hover {
 /* foto do conteudo */
 #item2 {
     background-color: aquamarine;
-    flex-grow: 1; /* permite que todo o espaço restante seja preenchido pelo item2 */
+    /* flex-grow: 1; permite que todo o espaço restante seja preenchido pelo item2 */
 }
 
 /* arquivo img da foto-inicial 1030x1030 */
 .FOTO-INICIAL {
-    max-width: 100%; /* Limita a largura máxima da imagem */
-    max-height: 100%; /* Limita a altura máxima da imagem */
+    max-width: 1000px; /* Limita a largura máxima da imagem */
+    max-height: 1900px; /* Limita a altura máxima da imagem */
     background-color: #5448D1;
     object-fit: cover; /* precisei cortar a imagem  */
     object-position: -120px 0px; /* precisei cortar a imagem -120px é o tanto que recortei */
@@ -148,6 +148,83 @@ button {
 
 
 /* --------------------- seção 1 do site (fim)--------------------- */
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .menu-links {
+        flex-direction: column;
+        align-items: self-start; /* texto vai para a esquerda */
+    }
+
+    .container1 {
+        display: block; /* deixa o conteudo um do lado do outro */
+        gap: 1%; /* tamanho do espaço que separa os item dentro do container */
+        justify-content: flex-start; /* alinha o conteudo (item1 e item2) para a esquerda */
+    }
+
+    #item1 {
+        width: 100%; /* Define a largura da div */
+        text-align: justify; /* justifica o texto */
+        padding: 0; /* remove o o padding em volta do texto */
+        
+    }
+
+    .FOTO-INICIAL {
+        max-width: 100%; /* Limita a largura máxima da imagem */
+        max-height: 100%; /* Limita a altura máxima da imagem */
+        object-position: -20px 0px;
+        }
+}
+
+
+
+@media (min-width: 769px) and (max-width: 1024) {
+    #item1 > h1 {
+        font-size: 2.5rem;
+    }
+
+    #item1 > p {
+        font-size: 1.6rem;
+    }
+
+    .FOTO-INICIAL {
+    max-width: 500px; /* Limita a largura máxima da imagem */
+    max-height: 500px; /* Limita a altura máxima da imagem */
+    }
+}
+
+
+@media (max-width: 1440px) {
+    #item1 > h1 {
+        color:#5448D1;
+        font-size: 2.5rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -203,32 +280,3 @@ button {
 
 
 /* --------------------- seção 2 do site (fim)--------------------- */
-
-
-
-
-
-
-
-
-
-@media (max-width: 1440px) {
-    #item1 > h1 {
-        font-size: 2.5rem;
-    }
-}
-
-
-
-
-/* Estilos responsivos */
-@media (max-width: 768px) {
-    .menu-links {
-        flex-direction: column;
-        align-items: self-start; /* texto vai para a esquerda */
-    }
-
-    .container1 {
-        /* padding: 2em 1em; */
-    }
-}

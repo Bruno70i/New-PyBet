@@ -80,28 +80,31 @@ a:hover {
     background-repeat: no-repeat; /* Evita que a imagem se repita */
     
 
-    padding: 10px;
+    padding: 0.5%; /* lembrar de remover */
     display: flex; /* deixa o conteudo um do lado do outro */
-    gap: 10px; /* tamanho do espaço que separa os item dentro do container */
+    gap: 1%; /* tamanho do espaço que separa os item dentro do container */
 }
 
 /* texto do conteudo */
 #item1 {
+    background-color: #f50909;
     margin: 0 auto;
-    padding: 20px; /* Ajusta o espaçamento interno */
-    padding-left: 150px; /* Ajusta o espaçamento na esquerda */
+    padding: 1%; /* Ajusta o espaçamento interno */
+    padding-left: 6%; /* Ajusta o espaçamento na esquerda */
     margin-right: 0%;
     display: block;
-    width: 80%; /* Define a largura da div */
-    max-width: 1300px; /* Limita o tamanho máximo */
+    width: 50%; /* Define a largura da div */
+    max-width: 100%; /* Limita o tamanho máximo */
+    max-height: 100%; /* Limita a altura máxima da imagem */
     box-sizing: border-box; /* Inclui padding na largura */
     
 }
 
 #item1 > h1 {
     margin: 0 0 0 0; /* Espaçamento margens zerada */
-    padding-top: 160px; /* Ajusta o espaçamento interno em cima */
-    font-size: 4.5rem; /* Ajusta o tamanho do texto */
+    background-color: #970404;
+    padding-top: 10%; /* Ajusta o espaçamento interno em cima */
+    font-size: 3.8rem; /* Ajusta o tamanho do texto */
     line-height: 1.2; /* Define o espaçamento entre linhas */
     font-weight: bold;
     color: #fff;
@@ -110,8 +113,7 @@ a:hover {
 
 #item1 > p {
     margin: 0 0 0 0; /* Espaçamento margens zerada */
-    margin-bottom: 20px; /* Espaço abaixo do parágrafo */
-    font-size: 2.8rem; /* tamanho da fonte */
+    font-size: 2.4rem; /* tamanho da fonte */
     line-height: 1.2; /* espaçamento da linha */
     color: #5448D1;
     font-weight: bold;
@@ -120,20 +122,28 @@ a:hover {
 
 /* foto do conteudo */
 #item2 {
-    width: auto;
-    height: auto;
+    background-color: aquamarine;
     flex-grow: 1; /* permite que todo o espaço restante seja preenchido pelo item2 */
+}
+
+/* arquivo img da foto-inicial 1030x1030 */
+.FOTO-INICIAL {
+    max-width: 100%; /* Limita a largura máxima da imagem */
+    max-height: 100%; /* Limita a altura máxima da imagem */
+    background-color: #5448D1;
+    object-fit: cover; /* precisei cortar a imagem  */
+    object-position: -120px 0px; /* precisei cortar a imagem -120px é o tanto que recortei */
 }
 
 
 /* botao inscrever-se */
 button {
-    margin-top: 150px;
+    margin-top: 10%;
     color: #5448D1;
     font-weight: bold;
-    padding: 30px 30px; /* Ajusta o botão */
+    padding: 25px 30px; /* Ajusta o botão */
     border-radius: 30px; /* borda do botão */
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 
@@ -202,7 +212,11 @@ button {
 
 
 
-
+@media (max-width: 1440px) {
+    #item1 > h1 {
+        font-size: 2.5rem;
+    }
+}
 
 
 
@@ -215,6 +229,6 @@ button {
     }
 
     .container1 {
-        padding: 2em 1em;
+        /* padding: 2em 1em; */
     }
 }

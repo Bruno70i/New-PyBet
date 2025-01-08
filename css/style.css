@@ -133,7 +133,7 @@ a:hover {
 /* arquivo img da foto-inicial 1030x1030 */
 .FOTO-INICIAL {
     max-width: auto; /* Limita a largura máxima da imagem */
-    max-height: auto; /* Limita a altura máxima da imagem */
+    max-height: 100vh; /* Limita a altura máxima da imagem */
     background-color: #5448D1;
     object-fit: cover; /* precisei cortar a imagem  */
     object-position: -120px 0px; /* precisei cortar a imagem -120px é o tanto que recortei */
@@ -159,7 +159,7 @@ button {
 
 
 
-/* Estilos responsivos */
+/* responsividade para celular */
 @media (max-width: 768px) {
     .menu-links {
         flex-direction: column;
@@ -181,6 +181,21 @@ button {
         
     }
 
+    #item1 > h1 {
+        padding: 2%; /* reduz o padding padrao para ficar menor */
+        font-size: 3.0rem; /* diminui o tamnho da fonte */
+        color: blue;
+    }
+
+    #item1 > p {
+        margin-top: 5%;
+    }
+
+    button {
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
 
     .FOTO-INICIAL {
         max-width: 100%; /* Limita a largura máxima da imagem */
@@ -190,18 +205,16 @@ button {
 }
 
 
-
+/* responsividade para notbook e tablet */
 @media (min-width: 769px) and (max-width: 1360px) {
 
 
     #item1 {
-        width: 100%; /* Define a largura da div */
-        
+        width: 100vh; /* limita o item1 para ficar com metade da tela */
     }
 
-
-
     #item1 > h1 {
+        color: aqua;
         font-size: 2.5rem;
     }
 
@@ -211,7 +224,7 @@ button {
 
     .FOTO-INICIAL {
         max-width: 100%; /* Limita a largura máxima da imagem */
-        max-height: 100%; /* Limita a altura máxima da imagem */
+        max-height: 100vh; /* Limita a altura máxima da imagem */
     }
 }
 

@@ -92,7 +92,7 @@ a:hover {
 
 /* texto do conteudo */
 #item1 {
-    /* background-color: #f50909; */
+    background-color: #f50909;
     padding: 1%; /* Ajusta o espaçamento interno */
     padding-left: 4%; /* Ajusta o espaçamento na esquerda */
     margin-right: 0%;
@@ -103,27 +103,13 @@ a:hover {
 
 #item1 > h1 {
     margin: 0 0 0 0; /* Espaçamento margens zerada */
-    /* background-color: #970404; */ 
+    background-color: #970404;
     padding-top: 10%; /* Ajusta o espaçamento interno em cima */
     font-size: 3.4rem; /* Ajusta o tamanho do texto */
     line-height: 1.2; /* Define o espaçamento entre linhas */
     font-weight: bold;
     color: #fff;
     word-break: break-word; /* Permite quebra de palavras */
-    position: relative; /* cria uma posição relativa para animação funcionar */
-    animation: slideDown 3s forwards; /* cria uma função com o nome sildeDown */
-}
-
-/* chama a função slideDown */
-@keyframes slideDown { 
-    from {
-        transform: translateY(-30%); /* move o elemento para cima, fora de sua posição original.
-        */
-    }
-    to {
-        transform: translateY(0); /* translateY(0); */
-    }
-
 }
 
 
@@ -134,24 +120,12 @@ a:hover {
     color: #5448D1;
     font-weight: bold;
     /* max-width: 900px; /* Limita o tamanho máximo */
-    position: relative; /* cria uma posição relativa para animação funcionar */
-    animation: moveRight 2s alternate; /* cria uma função com o nome moveRight */
-}
-
-/* chama a função moveRight */
-@keyframes moveRight {
-    from {
-        right: 200px; /* direção que o texto vem */
-    }
-    to {
-        right: 0; /* direção que o texto vai */
-    }
 }
 
 
 /* foto do conteudo */
 #item2 {
-    /* background-color: aquamarine; */
+    background-color: aquamarine;
     /* flex-grow: 1; permite que todo o espaço restante seja preenchido pelo item2 */
 }
 
@@ -160,7 +134,7 @@ a:hover {
 .FOTO-INICIAL {
     max-width: auto; /* Limita a largura máxima da imagem */
     max-height: 100vh; /* Limita a altura máxima da imagem */
-    /* background-color: #5448D1; */
+    background-color: #5448D1;
     object-fit: cover; /* precisei cortar a imagem  */
     object-position: -120px 0px; /* precisei cortar a imagem -120px é o tanto que recortei */
 }
@@ -240,7 +214,7 @@ button {
     }
 
     #item1 > h1 {
-        /*color: aqua; */
+        color: aqua;
         font-size: 2.5rem;
     }
 

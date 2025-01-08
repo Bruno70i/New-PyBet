@@ -36,13 +36,13 @@ header {
 ul { 
     display: flex; 
     list-style: none; /* remove os pontos de lista */ 
-    margin: 0 0 0 80px; /* coloca 80px para esquerda, separando a logo do topico */
+    margin: 0 0 0 5vw; /* coloca 5vw para esquerda, separando a logo do topico */
     padding: 0;
 }
 
 
 ul li { 
-    margin-right: 60px; /* adiciona espaço entre os itens do menu */
+    margin-right: 5vw; /* adiciona espaço entre os itens do menu */
 }
 
 
@@ -187,17 +187,41 @@ button {
 
 /* responsividade para celular */
 @media (max-width: 768px) {
-    .menu-links {
-        flex-direction: column;
-        align-items: self-start; /* texto vai para a esquerda */
+   
+
+    ul { 
+        margin: 0 0 0 3vw; /* coloca 80px para esquerda, separando a logo do topico */
+        padding: 0;
     }
+    
+    
+    ul li { 
+        margin-right: 5vw; /* adiciona espaço entre os itens do menu */
+    }
+
+    .logo-oficial {
+        margin: 0 0 0 15px;  /* espaço para esquerda */
+        width: 80px; /* tamanho da imagem largura */
+        height: 80px; /* tamanho da imagem altura */
+    }
+
+
+    ul li a {
+        font-size: 1.4rem;
+        color: #fff;
+        text-decoration: none;
+    }
+
+
+
 
     
     .container1 {
         display: block; /* deixa o conteudo um do lado do outro */
         gap: 1%; /* tamanho do espaço que separa os item dentro do container */
-        justify-content: flex-start; /* alinha o conteudo (item1 e item2) para a esquerda */
+        
     }
+
 
 
     #item1 {
@@ -209,12 +233,12 @@ button {
 
     #item1 > h1 {
         padding: 2%; /* reduz o padding padrao para ficar menor */
-        font-size: 3.0rem; /* diminui o tamnho da fonte */
-        color: blue;
+        font-size: 1.8rem; /* diminui o tamnho da fonte */
     }
 
     #item1 > p {
         margin-top: 5%;
+        font-size: 1.2rem;
     }
 
     button {

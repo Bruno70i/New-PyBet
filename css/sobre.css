@@ -1,0 +1,95 @@
+
+
+/* Configuração Global */
+* {
+    font-family: Arial, sans-serif;
+}
+
+
+/* Define estilos gerais para o corpo */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Estilos para o cabeçalho */
+header {
+    background-image: linear-gradient(to top, #18051a, black);
+    color: #fff;
+    margin: 0px;
+    padding: 10px;
+}
+
+
+/* --------------------- configuração dos menu (inicio) --------------------- */
+.menu {
+    margin: 0 0 0 0;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+ul { 
+    display: flex; 
+    list-style: none; /* remove os pontos de lista */ 
+    margin: 0 0 0 5vw; /* coloca 5vw para esquerda, separando a logo do topico */
+    padding: 0;
+}
+
+
+ul li { 
+    margin-right: 5vw; /* adiciona espaço entre os itens do menu */
+}
+
+
+ul li a {
+    font-size: 1.8rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* muda a cor dos links */
+a:hover {
+    color: #1D1E8F;
+    background-color: #8486e6;
+    border-radius: 10%;
+}
+
+.logo-oficial {
+    margin: 0 0 0 70px;  /* espaço para esquerda */
+    width: 100px; /* tamanho da imagem largura */
+    height: 100px; /* tamanho da imagem altura */
+}
+
+
+
+/* --------------------- configuração dos menu (fim) --------------------- */
+
+
+/* --------------------- CONTAINER 01 (INICIO) --------------------- */
+
+
+.container1 {
+    
+}
+
+.item1 {
+    background-color: #1D1E8F;
+}
+
+.item2 {
+    background-color: red;
+    
+}
+
+
+
+
+
+
+
+
+

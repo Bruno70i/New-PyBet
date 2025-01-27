@@ -10,14 +10,13 @@
 body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 
 /* Estilos para o cabeçalho */
 header {
     background-image: linear-gradient(to top, #18051a, black);
-    color: #fff;
+    color: #ffffff;
     margin: 0px;
     padding: 10px;
 }
@@ -48,7 +47,7 @@ ul li {
 
 ul li a {
     font-size: 1.8rem;
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
 }
 

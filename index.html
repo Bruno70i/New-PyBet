@@ -11,20 +11,45 @@
 <body>
     <!-- Cabeçalho do site -->
     <header>
-        <nav class="menu">
+
+        <nav class="nav-bar">
+            <div class="nav-logo">
+                <a href="/index.html"><img src="assets/LOGO-OFICIAL-100x100.png" alt="alt"></a>
+            </div>
             
-            <!-- Menu para navegação -->
-            
-            <a href="index.html"><img src="../assets/LOGO-OFICIAL-250x250.png" alt="alt" class="logo-oficial"></a>
-            
-            <ul class="menu-links">
-                <li><a href="pages/sobre.html">Sobre</a></li>
-                <li><a href="pages/planos.html">Planos</a></li>
-                <li><a href="pages/analise.html">Análise</a></li>
-                <li><a href="pages/contato.html">Contato</a></li>
-                <li><a href="pages/perfil.html">Perfil</a></li>
-            </ul>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="pages/sobre.html" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="pages/planos.html" class="nav-link">Planos</a></li>
+                    <li class="nav-item"><a href="pages/analise.html" class="nav-link">Análise</a></li>
+                    <li class="nav-item"><a href="pages/contato.html" class="nav-link">Contato</a></li>
+                    <li class="nav-item"><a href="pages/perfil.html" class="nav-link">Perfil</a></li>
+                </ul>
+            </div>
+
+            <div class="login-button">
+                <button><a href="#">ENTRAR</a></button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="assets/icon/menu_white_36dp.svg"></button>
+            </div>
         </nav>
+
+        <!-- menu responsivo para celular-->
+        <div class="mobile-menu"> 
+            <ul>
+                <li class="nav-item"><a href="pages/sobre.html" class="nav-link">Sobre</a></li>
+                <li class="nav-item"><a href="pages/planos.html" class="nav-link">Planos</a></li>
+                <li class="nav-item"><a href="pages/analise.html" class="nav-link">Análise</a></li>
+                <li class="nav-item"><a href="pages/contato.html" class="nav-link">Contato</a></li>
+                <li class="nav-item"><a href="pages/perfil.html" class="nav-link">Perfil</a></li>
+            </ul>
+            
+            <div class="login-button">
+                <button><a href="#">ENTRAR</a></button>
+            </div>
+        </div>
     </header>
     
     <!-- Seção principal -->
@@ -40,7 +65,7 @@
                 
                 <p>Analises feita com A.I e linguagem python para o Melhor Resultado</p>
 
-                <button>Comece Agora!</button>
+                <button id="BTNcomece-agora">Comece Agora!</button>
 
             </div>
             
@@ -64,7 +89,7 @@
 
 
     <!-- Conexão com JavaScript -->
-    <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
 

@@ -1,72 +1,152 @@
 
 
+
 /* Configuração Global */
 * {
-    font-family: Arial, sans-serif;
-}
-
-
-/* Define estilos gerais para o corpo */
-body {
-    margin: 0;
-    padding: 0;
-}
-
-
-/* Estilos para o cabeçalho */
-header {
-    background-image: linear-gradient(to top, #18051a, black);
-    color: #ffffff;
     margin: 0px;
-    padding: 10px;
+    padding: 0px;
+    font-family: Arial, sans-serif;
 }
 
 
 
 /* --------------------- configuração dos menu (inicio) --------------------- */
-.menu {
-    margin: 0 0 0 0;
-    display: inline-flex;
-    justify-content: space-between;
+
+
+header {
+    background-image: linear-gradient(to top, #18051a, black);
+    box-shadow: 0px 3px 10px rgb(0, 0, 0);
+}
+
+
+/* Estilos para o cabeçalho */
+.nav-bar {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* coloca os itens de menu em lados opostos */
+}
+
+
+.nav-list { 
+    display: flex; 
     align-items: center;
 }
 
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none; /* remove os pontos de lista */
+}
 
-ul { 
-    display: flex; 
-    list-style: none; /* remove os pontos de lista */ 
-    margin: 0 0 0 5vw; /* coloca 5vw para esquerda, separando a logo do topico */
-    padding: 0;
+.nav-item {
+    margin: 0 15px;
 }
 
 
-ul li { 
-    margin-right: 5vw; /* adiciona espaço entre os itens do menu */
-}
-
-
-ul li a {
-    font-size: 1.8rem;
-    color: #ffffff;
+.nav-link {
     text-decoration: none;
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 400;
 }
 
-/* muda a cor dos links */
-a:hover {
-    color: #1D1E8F;
-    background-color: #8486e6;
-    border-radius: 10%;
+.login-button button {
+    border: none;
+    background-color: #1D1E8F;
+    padding: 10px 15px;
+    border-radius: 5px;
 }
 
-.logo-oficial {
-    margin: 0 0 0 70px;  /* espaço para esquerda */
-    width: 100px; /* tamanho da imagem largura */
-    height: 100px; /* tamanho da imagem altura */
+.login-button button > a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media screen and (max-width: 730px) {
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+
+    .nav-item {
+        display: none;
+    }
+
+    .login-button {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .mobile-menu .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+
+    .mobile-menu .login-button button {
+        width: 100%;
+    }
+
+    .open {
+        display: block;
+    }
 }
 
 
+
+
+
+
+
+
+/* div que contem a logo oficial */
+.nav-logo {
+    display: flex;
+    padding: 05px 20px 05px 20px; /* espaço interno da imagem */
+}
+
+
+
+/* responsividade para celular */
+@media (max-width: 800px) {
+   
+    ul { 
+        margin: 0 0 0 3vw; /* coloca 80px para esquerda, separando a logo do topico */
+        padding: 0;
+    }
+}
 
 /* --------------------- configuração dos menu (fim) --------------------- */
+
 
 
 
@@ -148,11 +228,7 @@ a:hover {
 }
 
 
-/* foto do conteudo */
-#item2 {
-    /* background-color: aquamarine; */
-    /* flex-grow: 1; permite que todo o espaço restante seja preenchido pelo item2 */
-}
+
 
 
 /* arquivo img da foto-inicial 1030x1030 */
@@ -166,7 +242,7 @@ a:hover {
 
 
 /* botao inscrever-se */
-button {
+#BTNcomece-agora {
     margin-top: 20%;
     color: #5448D1;
     font-weight: bold;
@@ -298,54 +374,3 @@ button {
 
 
 
-
-
-/* --------------------- seção 2 do site (inicio)--------------------- */
-
-
-.container2-parte1 {
-    background-color: #970404;
-    padding: 10px;
-    gap: 50px;
-    display: flex;
-}
-
-.container2-parte1 > #item1 {
-    background-color: rgb(71, 136, 7);
-}
-
-
-/* usei um parentesco mencionando o #item2 que está dentro de container 2 */
-.container2-parte1 > #item2 {
-    background-color: coral;
-    flex-grow: inherit; /* permite que todo o espaço restante seja preenchido pelo item2 */
-}
-
-
-.container2-parte2 > #item2 {
-    background-color: rgb(59, 122, 101);
-    text-align: center;
-    color: #f50909;
-    
-}
-
-.container2-parte3 > #item3 {
-    padding: 10px;
-    background-color: darkorchid;
-    text-align: center;
-}
-
-.container2-parte4 > #item4 {
-    background-color: rgb(51, 35, 59);
-    text-align: center;
-    display: flex;
-}
-
-.container2-parte4 p {
-    background-color: #f50909;
-    margin-left: auto;
-    margin-right: a;
-}
-
-
-/* --------------------- seção 2 do site (fim)--------------------- */

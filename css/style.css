@@ -15,7 +15,7 @@
 
 header {
     background-image: linear-gradient(to top, #18051a, black);
-    box-shadow: 0px 3px 10px rgb(0, 0, 0);
+    
 }
 
 
@@ -25,6 +25,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between; /* coloca os itens de menu em lados opostos */
+    
 }
 
 
@@ -39,6 +40,12 @@ header {
     list-style: none; /* remove os pontos de lista */
 }
 
+li:hover {
+    background-color: #5448D1;
+    border-radius: 10px;
+    box-shadow: 1px 1px 15px 8px rgba(201, 108, 255, 0.863);
+}
+
 .nav-item {
     margin: 0 15px;
 }
@@ -51,17 +58,28 @@ header {
     font-weight: 400;
 }
 
+.login-button {
+    padding: 10px;
+    
+}
+
+button:hover {
+    box-shadow: 1px 1px 15px 8px rgba(201, 108, 255, 0.863);
+}
+
 .login-button button {
     border: none;
-    background-color: #1D1E8F;
+    background-color: #5448D1;
     padding: 10px 15px;
     border-radius: 5px;
 }
 
 .login-button button > a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
     text-decoration: none;
     color: #ffffff;
-    font-weight: 500;
+    font-weight: bolder;
 }
 
 .mobile-menu-icon {
